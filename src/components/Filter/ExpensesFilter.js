@@ -6,12 +6,12 @@ const ExpensesFilter = (props) => {
   const handleSelect = (e) => {
     props.onFilterHandler(e.target.value);
   };
-  console.log(props)
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
         <label>Filter by year</label>
         <select onChange={handleSelect} value={props.year}>
+          <option value="2023">2023</option>
           <option value="2022">2022</option>
           <option value="2021">2021</option>
           <option value="2020">2020</option>
